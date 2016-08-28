@@ -1,0 +1,45 @@
+#header{
+	height: 100px;
+	clear: both;
+	padding: 20px 0;
+	margin: 5px;
+}
+.logo {
+	float: left;
+}
+.partner {
+	float: right;
+}
+/*.navbar, .nav {
+	background-color: green;
+}
+.navbar-nav>li>a, .dropdown-menu>li>a {
+	color: #FFF !important;
+}
+.navbar-nav>li:hover, .dropdown-menu>li>a:hover, .current {
+	background-color: red !important;
+}
+.dropdown-menu {
+	background-color: #D00;
+	padding: 0;
+}*/
+@media (min-width: 979px) {
+  body {
+  	width: 1024px;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+	.logo, .partner {
+	    text-align: center;
+	    float: none;
+	    padding-left: 0;
+	    padding-right: 0;
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+}
