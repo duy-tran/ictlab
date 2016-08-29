@@ -179,6 +179,12 @@ p.copyright {
 
 .researchArea {
     padding: 20px;
+    opacity: 0.8;
+}
+
+.researchArea:hover{
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .researchArea img{
@@ -203,9 +209,12 @@ p.copyright {
     margin-right: 100px;
 }
 
-.current, .nav>li:hover{
-    background-color: lightgrey;
+.current, .nav>li:hover, .dropdown-menu>li>a:hover{
+    background-color: lightgrey !important;
     transition: 0.3s;
+}
+.dropdown-menu>li>a{
+    padding-left: 15px;
 }
 .current a{
     color: #000 !important;
@@ -213,4 +222,10 @@ p.copyright {
 
 #partnerLogos img {
     margin: 5px 30px;
+}
+
+@media (min-width: 768px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
 }
