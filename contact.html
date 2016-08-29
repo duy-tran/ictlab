@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ICTLab</title>
+    <title>Contact</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -20,7 +20,7 @@
     <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-
+    
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">ICTLab</a>
+                <a class="navbar-brand topnav" href="index.html">ICTLab</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -66,8 +66,8 @@
                     <li>
                         <a href="#">Members</a>
                     </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                    <li class="current">
+                        <a href="#">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -76,76 +76,60 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Header -->
-    <div class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>ICT<span class="labText">Lab</span></h1>
-                        <h3>University of Sciences and Technologies of Hanoi</h3>
-                        <hr class="intro-divider">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Page Content -->
-    <div class="content-section-a">
+    <div class="content-section-a high-padding">
         <div class="container">
-            <center>
-                <h2 class="title">RESEARCH AREAS</h2>
-            </center>
-            <div class="row">        
-                <div class="col-lg-6">
-                    <div class="researchArea">
-                        <img src="img/ip.png" class="img-responsive">
-                        <h4>Image Processing and Analysis</h4>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="researchArea">
-                        <img src="img/machine-learning.png" class="img-responsive">
-                        <h4>Machine Learning</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">        
-                <div class="col-lg-4">
-                    <div class="researchArea">
-                        <img src="img/gis.png" class="img-responsive">
-                        <h4>Geographical Information System</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="researchArea">
-                        <img src="img/ir.png" class="img-responsive">
-                        <h4>Information Retrieval</h4>
-                    </div>
-                </div>
-                 <div class="col-lg-4">
-                    <div class="researchArea">
-                        <img src="img/sensor.png" class="img-responsive">
-                        <h4>Sensors</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="content-section-b">
-        <div class="container">
-            <center>
-                <h2 class="title">OUR PARTNERS</h2>
-            </center>
-            <div id="partnerLogos">
+            <div class="small-container">
                 <center>
-                    <a href="http://usth.edu.vn" target="_blank"><img src="img/usth.png"></a>
-                    <a href="http://ioit.ac.vn" target="_blank"><img src="img/IOIT.jpg"></a>
-                    <a href="http://en.vietnam.ird.fr/" target="_blank"><img src="img/IRD.png"></a>
-                    <a href="http://www.univ-larochelle.fr/" target="_blank"><img src="img/la-rochelle.jpg"></a>
+                    <h2 class="title">CONTACT US</h2>
                 </center>
+                <p>
+                    <h3>Address</h3>
+                    USTH ICTLAB Research Laboratory <br>
+                    5th Floor, Education and Services Building <br>
+                    18 Hoang Quoc Viet, Cau Giay, Hanoi
+                </p>
+                <br>
+                <p>
+                    <h3>Assistant</h3>
+                    MS PHUNG THI THANH TU<br>
+                    phung-thi-thanh.tu@usth.edu.vn<br>
+                </p>
+                <br>
+                <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+                <script>
+                    var myCenter=new google.maps.LatLng(21.048119, 105.801230);
+
+                    function initialize()
+                    {
+                    var mapProp = {
+                      center:myCenter,
+                      zoom:16,
+                      mapTypeId:google.maps.MapTypeId.ROADMAP
+                      };
+
+                    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                    var marker=new google.maps.Marker({
+                      position:myCenter,
+                      });
+
+                    marker.setMap(map);
+
+                    var infowindow = new google.maps.InfoWindow({
+                      content:"ICTLab"
+                      });
+
+                    google.maps.event.addListener(marker, 'click', function() {
+                      infowindow.open(map,marker);
+                      });
+                    }
+
+                    google.maps.event.addDomListener(window, 'load', initialize);
+
+                </script>
+                <div id="googleMap" style="width:650px;height:500px;"></div>
             </div>
         </div>
         <!-- /.container -->
