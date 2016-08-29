@@ -204,11 +204,6 @@ p.copyright {
     padding-right: 50px;
 }
 
-.small-container{
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
 .current, .nav>li:hover, .dropdown-menu>li>a:hover{
     background-color: lightgrey !important;
     transition: 0.3s;
@@ -224,8 +219,40 @@ p.copyright {
     margin: 5px 30px;
 }
 
+.ulPadding {
+    padding-left: 20px !important;
+}
+
+.noDecoration:hover {
+    text-decoration: none;
+}
+
+#brand{
+    color: #007b7f;
+    font-size: 1.5em;
+}
+
+#brand:hover{
+    color: #6acccf;
+    transition: 0.3s;
+}
+
 @media (min-width: 768px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
+}
+
+@media (min-width: 1200px) {
+    .small-container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #topnav {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
 }
