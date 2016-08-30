@@ -37,7 +37,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
+        <div class="container topnav" id="topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -46,19 +46,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="index.html">ICTLab</a>
+                <a class="navbar-brand topnav" id="brand" href="index.html">ICT<span class="labText">Lab</span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="current">
+                    <li>
                         <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="#">Research Topics</a>
+                        <a href="topic.html">Research Topics</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="display: none; visibility: hidden;"><a href="project.html">Research Projects</a></a>
+                    <li class="current dropdown">
+                        <a href="#" class="dropdown-toggle hidden" data-toggle="dropdown"><a href="project.html">Research Projects</a></a>
                         <ul class="dropdown-menu dropdown-menu-left">
                             <li><a href="swarms.html">SWARMS Project</a></li>
                             <li><a href="swarms.html">ARCHIVES Project</a></li>
@@ -71,7 +71,7 @@
                         <a href="#">Members</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -84,18 +84,20 @@
         <div class="container">
             <div class="small-container">
                 <center>
-                    <h2 class="title">Research Projects</h2>
+                    <h2 class="title">RESEARCH PROJECTS</h2>
                 </center>
                 <p>
                     Together with most of the partners of this program, we are working on the two following projects.
                 </p>
                 <br>
                 <p>
-					<strong>– ARCHIVES</strong> (Analysis and Reconstruction of Catastrophes in History within Interactive Virtual Environments and Simulations). The goal is to support historical research on past disasters with the help of advanced document image processing and analysis, information retrieval, machine learning, Geographical Information Systems (GIS) representation, expert user interaction and agent-based computer modelling. The case study considered is the Red River floods and their impacts on Hanoi over the past centuries. <a href="archives.html"> Read more...</a>
+					<a href="archives.html"><strong>ARCHIVES</strong> (Analysis and Reconstruction of Catastrophes in History within Interactive Virtual Environments and Simulations)</a><br>
+                    The goal is to support historical research on past disasters with the help of advanced document image processing and analysis, information retrieval, machine learning, Geographical Information Systems (GIS) representation, expert user interaction and agent-based computer modelling. The case study considered is the Red River floods and their impacts on Hanoi over the past centuries. 
 				</p>
 				<br>
 				<p>
-					<strong>– SWARMS</strong> (Say and Watch: Automated image/sound Recognition for Mobile monitoring Systems). The objective of this project is to obtain a flexible and real-time monitoring network, which could supplement possibly existing (fixed) networks, and could then feed a decision-support system (through models and simulations of evolution scenarios) or support an advanced visualization of the phenomenon to monitor. The main idea is to study in a real context the feasibility of a smartphone-based monitoring network, where the devices are not only used as passive sensors but can also be actively used by their owners to transmit visual, voice and textual pieces of information to the monitoring system, in order to enable stakeholders to analyze and forecast information.<a href="swarms.html"> Read More… </a>
+					<a href="swarms.html"><strong>SWARMS</strong> (Say and Watch: Automated image/sound Recognition for Mobile monitoring Systems)</a> <br>
+                    The objective of this project is to obtain a flexible and real-time monitoring network, which could supplement possibly existing (fixed) networks, and could then feed a decision-support system (through models and simulations of evolution scenarios) or support an advanced visualization of the phenomenon to monitor. The main idea is to study in a real context the feasibility of a smartphone-based monitoring network, where the devices are not only used as passive sensors but can also be actively used by their owners to transmit visual, voice and textual pieces of information to the monitoring system, in order to enable stakeholders to analyze and forecast information.
 				</p>
             </div>
         </div>
