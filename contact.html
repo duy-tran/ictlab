@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Contact</title>
+    <title>About ICTLab</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -37,7 +37,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
+        <div class="container topnav" id="topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -46,19 +46,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="index.html">ICTLab</a>
+                <a class="navbar-brand topnav" id="brand" href="index.html">ICT<span class="labText">Lab</span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    <li class="current">
                         <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="#">Research Topics</a>
+                        <a href="topic.html">Research Topics</a>
                     </li>
-                    <li>
-                        <a href="#">Research Projects</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="display: none; visibility: hidden;"><a href="project.html">Research Projects</a></a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a href="swarms.html">SWARMS Project</a></li>
+                            <li><a href="archives.html">ARCHIVES Project</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">News and Events</a>
@@ -66,8 +70,8 @@
                     <li>
                         <a href="#">Members</a>
                     </li>
-                    <li class="current">
-                        <a href="#">Contact</a>
+                    <li>
+                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -76,7 +80,7 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
+       <!-- Page Content -->
     <div class="content-section-a high-padding">
         <div class="container">
             <div class="small-container">
