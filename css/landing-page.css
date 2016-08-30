@@ -21,8 +21,15 @@ h6 {
     font-weight: 700;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #b4006e;
+    transition: 0.3s;
+}
+
 .topnav {
     font-size: 14px; 
+    background-color: #FFF !important;
 }
 
 .lead {
@@ -191,8 +198,13 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+.linkColor {
+    color: #007b7f;
+}
+
 .title {
     margin-bottom: 40px;
+    color: #007b7f;
 }
 
 .researchArea {
@@ -223,7 +235,7 @@ p.copyright {
 }
 
 .current, .nav>li:hover, .dropdown-menu>li>a:hover{
-    background-color: lightgrey !important;
+    background-color: #aadddf !important;
     transition: 0.3s;
 }
 .dropdown-menu>li>a{
@@ -273,6 +285,111 @@ p.copyright {
     height: 500px;
 }
 
+.member img{
+    width: 200px;
+    height: 200px;
+}
+
+#newsPage {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/*#main {
+    background-color: red;
+    height: 500px;
+}*/
+
+#mainContent {
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+#sideContent {
+    /*margin-top: -20px;*/
+    padding: 10px;
+}
+
+#sideContent, #mainContent {
+    background: #fff;
+    -moz-box-shadow: 0 0 9px 1px rgba(2,75,117,.20);
+    -webkit-box-shadow: 0 0 9px 1px rgba(2,75,117,.20);
+    box-shadow: 0 0 9px 1px rgba(2,75,117,.20);
+}
+
+#sideContent h5{
+    margin: 5px 0px;
+    color: #007b7f;
+}
+
+.greyHr{
+    border: 1px solid #b4006e;
+    margin: 0 20px 10px 0;
+}
+
+.news li {
+    display: block;
+    margin-left: -25px;
+    font-weight: 500;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.news li:before {
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #b4006e;
+}
+
+.newsItem button{
+    float: right;
+}
+
+.date {
+    font-size: 0.8em;
+    color: darkgrey;
+}
+
+.buttonContainer {
+    margin: 20px 10px;
+    text-align: right;
+}
+
+.button {
+    /*display: block;*/
+    background-color: #007b7f;
+    color: #FFF;
+    padding: 3px 10px;
+    border-radius: 2px;
+    font-weight: 300;
+    border: 1px solid #007b7f;
+}
+
+.button:hover {
+    color: #007b7f;
+    background-color: #FFF;
+    transition: 0.3s;
+}
+
+.newsItem p {
+    font-weight: 500;
+}
+
+.currentPage {
+    display: inline-block;
+    border: 1px solid #007b7f;
+    background-color: #007b7f;
+    color: #FFF;
+    margin: 10px;
+    width: 20px;
+}
+
 @media (min-width: 768px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
@@ -280,7 +397,7 @@ p.copyright {
 }
 
 @media (min-width: 992px) {
-    #topnav {
+    #topnav, #newsPage {
         padding-left: 70px;
         padding-right: 70px;
     }
