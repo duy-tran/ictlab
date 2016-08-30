@@ -103,18 +103,18 @@
     <div class="content-section-a">
         <div class="container">
             <center>
-                <a href="topic.html" class="noDecoration">
+                <a href="topic.html">
                     <h2 class="title">RESEARCH TOPICS</h2>
                 </a>
             </center>
             <div class="row">        
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="researchArea">
                         <img src="img/ip.png" class="img-responsive">
                         <h4>Image Processing and Analysis</h4>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="researchArea">
                         <img src="img/machine-learning.png" class="img-responsive">
                         <h4>Machine Learning</h4>
@@ -122,19 +122,19 @@
                 </div>
             </div>
             <div class="row">        
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="researchArea">
                         <img src="img/gis.png" class="img-responsive">
                         <h4>Geographical Information System</h4>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="researchArea">
                         <img src="img/ir.png" class="img-responsive">
                         <h4>Information Retrieval</h4>
                     </div>
                 </div>
-                 <div class="col-lg-4">
+                 <div class="col-lg-4 col-md-4">
                     <div class="researchArea">
                         <img src="img/sensor.png" class="img-responsive">
                         <h4>Sensors</h4>
@@ -156,6 +156,58 @@
                     <a href="http://en.vietnam.ird.fr/" target="_blank"><img src="img/IRD.png"></a>
                     <a href="http://www.univ-larochelle.fr/" target="_blank"><img src="img/la-rochelle.jpg"></a>
                 </center>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+
+    <div class="content-section-a">
+        <div class="container">
+            <center>
+                <h2 class="title">LASTEST NEWS</h2>
+            </center>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="newsItem newsItemHomePage">
+                        <h4 ><a href="news/news10.html" class="title">Call for internship 2016 (HealthOmics)</a></h4>
+                        <p class="date">Match 2, 2016</p>
+                        <p>The project Omics data analysis for human health and diseases in Vietnam (HealthOmics) is open for two interns, who may be in their second or third-year at ICT department, USTH. Candidates are expected to be interested in computational biology but not necessarily having experience in this field and will be trained where necessary.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="newsItem newsItemHomePage">
+                        <h4 ><a href="news09.html" class="title">Call for bachelor internships at ICTLab</a></h4>
+                        <p class="date">January 24, 2016</p>
+                        <p>In the context of the SWARMS project (see the figure) of our ICTLab of USTH, we are looking for ICT bachelor students  who prefers to do his/her final internship in the ICTLab. If you get interested, please feel free to contact the supervisors mentioned in the subjects via their email or directly at ICTLab.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="newsItem newsItemHomePage">
+                        <h4 ><a href="news08.html" class="title">ICTLab Seminar 2016/01/26 @ USTH</a></h4>
+                        <p class="date">January 18, 2016</p>
+                        <p><b>Speaker:</b> Dr. LE Huu Ton, University of Science and Technology of Hanoi, Vietnam<br>
+                        <b>Topic:</b> Improving Image Representation Using Image Saliency and Information Gain<br>
+                        <b>Date:</b> 1:00pm – 2:00pm, January 26th 2016<br>
+                        <b>Location:</b> Room ICTLab, USTH building, 18 Hoang Quoc Viet, Cau Giay, Hanoi.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="newsItem newsItemHomePage">
+                        <h4 ><a href="news07.html" class="title">ICTLab Poster: Epidemiological Risks Model for the Dengue Fever with Control Policies and Economic Mobility</a></h4>
+                        <p class="date">January 11, 2016</p>
+                        <p>
+                        The aim of this project is to design a model which can represent the dynamics of spreading of the dengue fever in indirect correlation with the climate and considering healthcare policies and the economic mobility of different countries. The final result of the model is to show for the concerned countries that the limitation of spreading is possible thanks to policies, but also the combination, communication, synchronisation of members of a policy is at least as crucial as policy itself.</p>
+                                
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 40px;">
+            <center>
+                <a href="news/index.html"><span class="button bigButton">READ MORE NEWS</span></a>
+            </center>
             </div>
         </div>
         <!-- /.container -->
@@ -195,6 +247,16 @@
           }
           setTimeout(changeBackground,5000);
         }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.newsItemHomePage').hover(function(){
+                $( this ).find('a').css("color", "#b4006e");
+                $( this ).find('a').css("transition", "0.3s");
+            },function() {
+                $( this ).find('a').css("color", "#007b7f");
+            });
+        });
     </script>
 
 </body>
