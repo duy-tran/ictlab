@@ -42,25 +42,26 @@ a:hover {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
+    background-color: #333;
     /*background: url(../img/bg.png) no-repeat center center;*/
     background-size: cover;
 }
 
 .backGround1{
-    background: url(../img/bg.png) no-repeat center center;
-    background-size: cover;
+    background: url(../img/bg.png) no-repeat center center !important;
+    background-size: cover !important;
     transition: 2s;
 }
 
 .backGround2{
-    background: url(../img/bg2.png) no-repeat center center;
-    background-size: cover;
+    background: url(../img/bg2.png) no-repeat center center !important;
+    background-size: cover !important;
     transition: 2s;
 }
 
 .backGround3{
-    background: url(../img/bg3.png) no-repeat center center;
-    background-size: cover;
+    background: url(../img/bg3.png) no-repeat center center !important;
+    background-size: cover !important;
     transition: 2s;
 }
 

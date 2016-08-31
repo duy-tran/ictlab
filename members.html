@@ -241,11 +241,23 @@
         </div>
     </footer>
 
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.logo-box').hover(function(){
+                $( this ).find('.mem_text').css("background-color", "#FFF");
+                $( this ).find('.mem_text').css("transition", "0.3s");
+            },function() {
+                $( this ).find('.mem_text').css("background-color", "#CCC");
+            });
+        });
+    </script>
 
 </body>
 
