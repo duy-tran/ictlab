@@ -405,6 +405,12 @@ p.copyright {
     padding: 20px;
 }
 
+#partnerName {
+    height: 50px;
+    line-height: 50px;
+    padding-top: 20px;
+}
+
 @media (min-width: 768px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;

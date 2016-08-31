@@ -144,17 +144,18 @@
         </div>
     </div>
 
-    <div class="content-section-b">
+    <div class="content-section-b" id="partners">
         <div class="container">
             <center>
                 <h2 class="title">OUR PARTNERS</h2>
             </center>
             <div id="partnerLogos">
                 <center>
-                    <a href="http://usth.edu.vn" target="_blank"><img src="img/usth.png"></a>
-                    <a href="http://ioit.ac.vn" target="_blank"><img src="img/IOIT.jpg"></a>
-                    <a href="http://en.vietnam.ird.fr/" target="_blank"><img src="img/IRD.png"></a>
-                    <a href="http://www.univ-larochelle.fr/" target="_blank"><img src="img/la-rochelle.jpg"></a>
+                    <a href="http://usth.edu.vn" target="_blank" class="logo" alt="University of Science and Technology of Hanoi"><img src="img/usth.png"></a>
+                    <a href="http://ioit.ac.vn" target="_blank" class="logo" alt="Institute of Information Technology"><img src="img/IOIT.jpg"></a>
+                    <a href="http://en.vietnam.ird.fr/" target="_blank" class="logo" alt="Institut de recherche pour le développement"><img src="img/IRD.png"></a>
+                    <a href="http://www.univ-larochelle.fr/" target="_blank" class="logo" alt="Université de La Rochelle"><img src="img/la-rochelle.jpg"></a>
+                    <div id="partnerName"></div>
                 </center>
             </div>
         </div>
@@ -219,7 +220,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <center>
-                        <p> Site Map </p>
+                        <a href="sitemap.html">Sitemap</a> 
                         <p class="copyright text-muted small">Copyright &copy; ICTLab 2016. All Rights Reserved</p>
                     </center>
                 </div>
@@ -255,6 +256,22 @@
                 $( this ).find('a').css("transition", "0.3s");
             },function() {
                 $( this ).find('a').css("color", "#007b7f");
+            });
+            $('.researchArea').hover(function(){
+                $( this ).find('h4').css("color", "#007b7f");
+                $( this ).find('h4').css("transition", "0.3s");
+            },function() {
+                $( this ).find('h4').css("color", "#000");
+            });
+            $('.logo').hover(function(){
+                var url = $(this).attr("href");
+                var name = $(this).attr("alt");
+                $('#partnerName').html("<a href=\""+url+"\">"+name+"</a>");
+            });
+            $('#partners').hover(function(){
+                
+            },function() {
+                $('#partnerName').html("");
             });
         });
     </script>
